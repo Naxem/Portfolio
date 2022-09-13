@@ -1,0 +1,244 @@
+*, *::after, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    cursor: default;
+}
+
+h1 {
+    color: black;
+    font-size: max(30px, 5vw);
+}
+
+h2 {
+    color: black;
+    font-size: max(20px, 2.5vw);
+}
+
+h3 {
+    color: black;
+    font-size: max(15px, 1.3vw);
+}
+
+h5 {
+    color: black;
+    font-size: max(10px, 1.2vw);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: blue;
+}
+
+/* intro */
+.section-intro {
+    margin-top: max(5%, 5vw);
+    margin-bottom: max(5%, 5vw);
+}
+
+.div-intro {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.div-intro p {
+    color: black;
+    font-size: max(12px, 1.5vw);
+}
+
+.intro-social li a {
+    font-size: max(10px, 1vw);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: max(10px);
+}
+
+/* about */
+.about-content {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.div-about {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding-bottom: max(40px);
+}
+
+.intro-info {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+.intro-info img {padding-right: max(20px);}
+
+.intro-info p {
+    color: black;
+    font-size: max(12px, 1vw);
+    padding-top: max(15px);
+}
+.div-about h5 {padding-top: max(10px);}
+
+.div-btn a {
+    padding: max(5px, 0.5vw);
+    font-size: max(20px, 1.5vw);
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.tab-Comp {
+    margin-top: max(50px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.skill-bars span {
+    color: black;
+    font-size: max(15px, 1.2vw);
+}
+
+.skill-bars strong {
+    color: black;
+    font-size: max(20px, 1.5vw);
+}
+
+/* Edute */
+.section-etude {
+    margin-top: max(50px);
+}
+
+.etude-timeline {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.timeline-header {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: max(10px);
+}
+.timeline-header h3 {padding-bottom: max(10px);}
+
+.timeline-header p {
+    font-size: max(25px, 1.5vw);
+    color: black;
+    padding-bottom: max(10px);
+}
+
+.timeline-content p {
+    color: black;
+    font-size: max(15px, 0.8vw);
+    padding-bottom: max(10px);
+}
+
+/* Projets */
+.section-projet {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: max(50px);
+}
+
+/* Veille */
+.section-veille {
+    margin-top: max(50px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+/* cards */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.container {
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tag-teal {
+  background-color: #47bcd4;
+}
+
+.tag-purple {
+  background-color: #5e76bf;
+}
+
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user-info h5 {
+  margin: 0;
+}
+
+.user-info small {
+  color: #545d7a;
+}
