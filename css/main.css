@@ -1,32 +1,38 @@
 *, *::after, *::after {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: #FFF;
+    background: rgb(24, 23, 23);
     cursor: default;
+    
 }
 
 h1 {
-    color: black;
+    color: rgba(255, 255, 255, 0.7);
     font-size: max(30px, 5vw);
 }
 
 h2 {
-    color: black;
+    color: rgba(255, 255, 255, 0.7);
     font-size: max(20px, 2.5vw);
 }
 
 h3 {
-    color: black;
+    color: rgba(255, 255, 255, 0.7);
     font-size: max(15px, 1.3vw);
 }
 
 h5 {
-    color: black;
+    color: rgba(255, 255, 255, 0.7);
     font-size: max(10px, 1.2vw);
+}
+
+span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: max(15px, 1.3vw);
 }
 
 a {
@@ -36,21 +42,35 @@ a {
 }
 
 /* intro */
-.section-intro {
-    margin-top: max(5%, 5vw);
-    margin-bottom: max(5%, 5vw);
+.degrader {
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-img {
+    opacity: 60%;
 }
 
 .div-intro {
+    position: relative;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     display: flex;
+    z-index: 2;
+    margin-bottom: max(5%, 5vw);
 }
 
 .div-intro p {
     color: black;
     font-size: max(12px, 1.5vw);
+}
+
+.div-intro h5 {
+    margin-top: max(5%, 5vw);
 }
 
 .intro-social li a {
@@ -60,6 +80,10 @@ a {
     flex-direction: column;
     display: flex;
     margin: max(10px);
+}
+.intro-social {
+    display: flex;
+    z-index: 2;
 }
 
 /* about */
@@ -92,13 +116,6 @@ a {
     padding-top: max(15px);
 }
 .div-about h5 {padding-top: max(10px);}
-
-.div-btn a {
-    padding: max(5px, 0.5vw);
-    font-size: max(20px, 1.5vw);
-    border: 2px solid black;
-    margin-right: 10px;
-}
 
 .tab-Comp {
     margin-top: max(50px);
@@ -183,7 +200,7 @@ a {
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 20px rgba(230, 221, 221, 0.2);
   overflow: hidden;
   width: 300px;
 }

@@ -1,23 +1,18 @@
-* , *:before, *:after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: default;
-}
-
 /*** nav barre ***/
 nav {
     width: 100%;
     display: flex;
     align-items: center;
     padding: 15px;
-    position: relative;
+    position: fixed;
+    z-index: 3;
+    background-attachment: fixed;
 }
 
 .navlinks-container a {
     font-size: max(1.2vw, 20px);
     text-decoration: none;
-    color: #c99d3e;
+    color: #ffffff;
     display: inline-block;
     margin: 10px 0
 }
@@ -29,13 +24,14 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    background: #000;
+    background: rgb(24, 23, 23);
     top: 100%;
     left: 0;
-    height: 100vh;
+    height: 50vh;
     padding: 15px 50px 15px 20px;
-    border-right: 1px solid #c5c5c6;
-    border-bottom: 1px solid #c5c5c6;
+    border-right: 1px solid #c5c5c6e9;
+    border-bottom: 1px solid #c5c5c6e9;
+    border-top: 1px solid #c5c5c6e9;
     transform: translate(-100%);
 }
 
@@ -63,13 +59,14 @@ nav a :hover {cursor: pointer;}
     display: flex;
     align-items: center;
     position: relative;
+    background-color: rgb(24, 23, 23);
 }
 
 .hamburger span {
     display: block;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: rgb(255, 255, 255);
     position: absolute;
     pointer-events: none;
     transition: opacity 0.3s 0.15s ease-out;
@@ -146,7 +143,7 @@ footer {
 
 .media-list a {
     text-decoration: none;
-    color: #c99d3e;
+    color: #c5c5c6;
     display: flex;
     align-items: center;
     font-size: max(1vw, 20px);
