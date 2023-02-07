@@ -1,0 +1,57 @@
+.timeline-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding-top: 2vw;
+}
+
+.timeline-ico .span-edute {
+    background: #fffb00;
+    margin: auto;
+    width: 1px;
+    height: max(50px, 20vh);
+    display: flex;
+}
+
+.timeline-header {
+    width: 100%;
+}
+
+.timeline-header h3 {
+    font-size: 25px;
+    color: white;
+}
+
+.timeline-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.timeline-content p,
+.timeline-header p {
+    font-size: 16px;
+}
+
+.timeline-content p {color: #ffffff;}
+.timeline-header p {color: #fffb00;}
+
+.timeline-ico {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    padding: 1px;
+}
+
+.timeline-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etude-header h2 {
+    margin-top: 40px;
+}

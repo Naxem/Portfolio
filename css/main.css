@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*, *::after, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Arial';
+    font-weight: 300;
+}
+
+body {
+    background: rgb(24, 23, 23);
+    cursor: default;
+    
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: max(30px, 5vw);
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: max(20px, 2.5vw);
+}
+
+h3 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: max(15px, 1.3vw);
+}
+
+h5 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: max(10px, 1.2vw);
+}
+
+span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: max(15px, 1.3vw);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: blue;
+}
+
+/* intro */
+.section-intro {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.section-intro img {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    z-index: 0;
+}
+
+.opacity-img { 
+    opacity: 30%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../ressources/images/pexels-pixabay-270632.jpg);
+    background-size: cover;
+}
+
+.div-intro {
+    position:absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-intro p {
+    color: black;
+    font-size: max(12px, 1.5vw);
+}
+
+.div-intro h5 {
+    margin-top: max(5%, 5vw);
+}
+
+.intro-social li a {
+    font-size: max(10px, 1vw);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: max(10px);
+}
+.intro-social {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+}
+
+/* about */
+.about-content {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.div-about {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding-bottom: max(40px);
+}
+
+.intro-info {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+.intro-info img {padding-right: max(20px);}
+
+.intro-info p {
+    color: black;
+    font-size: max(12px, 1vw);
+    padding-top: max(15px);
+}
+.div-about h5 {padding-top: max(10px);}
+
+.tab-Comp {
+    margin-top: max(50px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.skill-bars span {
+    color: black;
+    font-size: max(15px, 1.2vw);
+}
+
+.skill-bars strong {
+    color: black;
+    font-size: max(20px, 1.5vw);
+}
