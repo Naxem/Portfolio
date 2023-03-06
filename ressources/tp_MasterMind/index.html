@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>MasterMind</title>
+</head>
+<body>    
+
+    <section>
+        <div class="result">
+            <p>Tu as <p id="bonne-reponse">0</p> bonne réponse</p>
+            <p>Tu as <p id="mauvaise-reponse">0</p> mauvaise réponse</p>
+        </div>
+
+        <div class="dificulter-div">
+            <p>Choisi ta difilculté :</p>
+            <div class="dificulte" onclick="userDif('facile')">Facile</div>
+            <div class="dificulte" onclick="userDif('intermediare')">intermediare</div>
+            <div class="dificulte" onclick="userDif('dificile')">dificile</div>
+        </div>
+
+        <div class="dificulter-div">
+            <a href="regle.html">Affichier les règle du jeu</a>
+        </div>
+    </section>
+
+    <section class="main">
+    <div class="main" id="tab">
+ 
+    </div>
+
+    <div class="user">
+        <div class="colorS" onclick="userInput('blue')"></div>
+        <div class="colorS" onclick="userInput('red')"></div>
+        <div class="colorS" onclick="userInput('green')"></div>
+        <div class="colorS" onclick="userInput('yellow')"></div>
+    </div>
+    </section>
+    <script src="js/ramdom_couleur.js"></script>
+</body>
+</html>

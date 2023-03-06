@@ -30,9 +30,7 @@
   position: relative;
   min-width: 320px;
   height: 440px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.6),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 4px #d41515da; /*a changer*/
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
@@ -44,6 +42,10 @@
 
 .body-projects .container .card:nth-child(2) .box .content a {
   background: #e91e63;
+}
+
+.body-projects .container .card:nth-child(3) .box .content a {
+  background: #2ede1bf6;
 }
 
 .body-projects .container .card .box {

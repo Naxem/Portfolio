@@ -1,0 +1,51 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+}
+
+.btn-retour {
+    justify-content: center;
+    display: flex;
+    border: 2px solid black;
+    width: 5vw;
+    height: 3vh;
+    margin: 2vh;
+}
+
+.btn-retour a {
+    text-decoration: none;
+    color: black;
+}
+
+.regle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 5vh;
+    margin-top: -6vh;
+}
+
+.titre {
+    color: black;
+    padding-top: 2vh;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.texte {
+    color: black;
+    font-size: 16px;
+}
