@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    color: white;
 }
 
 section#mentions {
@@ -24,11 +23,25 @@ h2 {
 }
 
 strong {
-    color: white;
     font-weight: 800;
 }
 
 section#mentions a {
     text-decoration: underline;
+}
+
+.dark-os {
     color: white;
+}
+
+.dark-os-h {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.white-os {
+    background-color: azure;
+}
+
+.white-os-h {
+    color: rgb(31, 31, 31);
 }
