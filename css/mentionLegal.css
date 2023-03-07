@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    color: white;
+}
+
+section#mentions {
+    margin-top: 100px;
+    min-height: max-content;
+    max-width: 95%;
+}
+section .textes {margin: 20px 0 0 20px;}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+strong {
+    color: white;
+    font-weight: 800;
+}
+
+section#mentions a {
+    text-decoration: underline;
+    color: white;
+}
