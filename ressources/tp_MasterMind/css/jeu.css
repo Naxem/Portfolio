@@ -1,0 +1,97 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --taille-main: 28vw;
+    --color-back: black;
+    --taille-ligne: 25vw;
+    --taille-ligneH: 3vw;
+    --color-back-ligne: gray;
+    --taille-rond: 2.5vw;
+    --color-back-rond: white;
+    --taille-userH: 8vh;
+    --taille-rond-user: 2.7vw;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.main {
+    background-color: var(--color-back);
+    width: var(--taille-main);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+}
+
+.ligne {
+    background-color: var(--color-back-ligne);
+    width: var(--taille-ligne);
+    height: var(--taille-ligneH);
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 40px;
+    flex-direction: row;
+    display: flex;
+}
+
+.color {
+    background-color: var(--color-back-rond);
+    border-radius: 50%;
+    width: var(--taille-rond);
+    height: var(--taille-rond);
+    margin: auto;
+}
+
+.user {
+    background-color: var(--color-back);
+    width: var(--taille-main);
+    height: var(--taille-userH);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    border-radius: 20px;
+}
+
+.colorS {
+    border-radius: 50%;
+    width: var(--taille-rond-user);
+    height: var(--taille-rond-user);
+    margin: auto;
+}
+.colorS:nth-child(1) {background-color: blue;}
+.colorS:nth-child(2) {background-color: red;}
+.colorS:nth-child(3) {background-color: green;}
+.colorS:nth-child(4) {background-color: yellow;}
+
+/*result*/
+.result {
+    background-color: var(--color-back);
+    width: 11vw;
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    flex-direction: column;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.result p {
+    white-space: pre-line;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 2vh;
+}

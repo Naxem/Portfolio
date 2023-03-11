@@ -1,3 +1,28 @@
+const conbinaison = []
+const conbinaison_user = []
+const round_couleurs = document.getElementsByClassName("color");
+let color = ""
+var i = 0
+var pseudo = localStorage.getItem("pseudo")
+let scores = JSON.parse(localStorage.getItem("tab_scores")) || []
+
+while(i < 4) {
+    color = getRandomInt(4)
+    if(conbinaison.includes(color)) {
+        i--
+        conbinaison.pop()
+    } else {
+        conbinaison.push(color)
+        i++
+    }
+}
+let nbJeu = false
+let nbchoice = 0
+let dificulte = localStorage.getItem('dificulte')
+
+//appelle la function pour crééer un tableau
+tab(dificulte)
+
 function getRandomInt(max) {
     var color = Math.floor(Math.random() * max) + 1;
     //4 couleur possible : bleu, jaune, rouge et vert
@@ -21,17 +46,7 @@ function getRandomInt(max) {
     return color
 }
 
-const conbinaison = []
-const conbinaison_user = []
-const round_couleurs = document.getElementsByClassName("color");
-for(var i = 0; i < 4; i++) {
-    conbinaison.push(getRandomInt(4))
-}
-let nbJeu = false
-let nbchoice = 0
-
 function userInput(colorInput) {
-    console.log(nbchoice%4)
     test = nbchoice%4
     if(test == 3) {nbJeu = true}
     round_couleurs[nbchoice].style.backgroundColor = colorInput
@@ -46,8 +61,9 @@ function userInput(colorInput) {
 function test_reponse() {
     let good = 0
     let wrong = 0
+    var nb_essai = nbchoice / 4
     console.log(conbinaison)
-    console.log(conbinaison_user)
+    //console.log(conbinaison_user)
     for(var i = 0; i < 4; i++) {
         if(conbinaison[i] == conbinaison_user[i]) {
             good++
@@ -55,29 +71,32 @@ function test_reponse() {
             wrong++
         }
     }
-    if(good == 4) {
-        console.log("Bravo !!")
-        alert("Tu as gagné !!!")
-        location.reload()
-    }
-    if(nbchoice == round_couleurs.length) {
-        console.log("Null !!")
-        alert("Tu as perdu !!!" + conbinaison)
-        location.reload()
-    }
-    console.log(good)
-    console.log(wrong)
     conbinaison_user.splice(conbinaison)
     const good_result = document.getElementById("bonne-reponse");
     const wrong_result = document.getElementById("mauvaise-reponse");
-    good_result.innerHTML = good
-    wrong_result.innerHTML = wrong
+    good_result.innerText = ("Tu as " + good + " de bonne réponse")
+    wrong_result.innerText = ("Tu as " + wrong + " de mauvaise réponse")
+
+    if(good == 4) {
+        let r = true
+        const tab_scores = [pseudo,nb_essai, dificulte, r]
+        scores.push(JSON.stringify(tab_scores))
+        localStorage.setItem('tab_scores', JSON.stringify(scores))
+        alert("Tu as gagné !!!" + conbinaison)
+        location.reload()
+    }
+    if(nbchoice == round_couleurs.length) {
+        let r = false
+        const tab_scores = [pseudo,nb_essai, dificulte, r]
+        scores.push(JSON.stringify(tab_scores))
+        localStorage.setItem('tab_scores', JSON.stringify(scores))
+        alert("Tu as perdu !!!" + conbinaison)
+        location.reload()
+    }
 }
 
-function userDif(dif) {
-    let dificulte = ""
-    dificulte = dif
-    tab(dif)
+function retourF() {
+    window.location.href = "index"
 }
 
 function tab(dif) {

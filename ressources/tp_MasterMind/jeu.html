@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jeu.css">
+    <title>MasterMind</title>
+</head>
+<body>    
+
+    <section>
+        <div class="result">
+            <p id="bonne-reponse">Tu as 0 bonne réponse</p>
+            <p id="mauvaise-reponse">Tu as 0 mauvaise réponse</p>
+            <p class="btn_retour" onclick="retourF()">Retour</p>
+        </div>
+    </section>
+
+    <section class="main">
+    <div class="main" id="tab">
+ 
+    </div>
+
+    <div class="user">
+        <div class="colorS" onclick="userInput('blue')"></div>
+        <div class="colorS" onclick="userInput('red')"></div>
+        <div class="colorS" onclick="userInput('green')"></div>
+        <div class="colorS" onclick="userInput('yellow')"></div>
+    </div>
+    </section>
+    <script src="js/ramdom_couleur.js"></script>
+</body>
+</html>

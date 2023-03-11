@@ -5,40 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>MasterMind</title>
+    <script src="js/main.js"></script>
+    <title>Acceuil</title>
 </head>
-<body>    
-
-    <section>
-        <div class="result">
-            <p>Tu as <p id="bonne-reponse">0</p> bonne réponse</p>
-            <p>Tu as <p id="mauvaise-reponse">0</p> mauvaise réponse</p>
-        </div>
-
-        <div class="dificulter-div">
-            <p>Choisi ta difilculté :</p>
-            <div class="dificulte" onclick="userDif('facile')">Facile</div>
-            <div class="dificulte" onclick="userDif('intermediare')">intermediare</div>
-            <div class="dificulte" onclick="userDif('dificile')">dificile</div>
-        </div>
-
-        <div class="dificulter-div">
-            <a href="regle.html">Affichier les règle du jeu</a>
-        </div>
-    </section>
-
-    <section class="main">
-    <div class="main" id="tab">
- 
+<body>
+    <div class="dificulter-div">
+        <p><strong>Choisi ta difilculté :</strong></p>
+        <div class="dificulte" onclick="userDif('facile')"><p>Facile</p></div>
+        <div class="dificulte" onclick="userDif('intermediare')"><p>intermediare</p></div>
+        <div class="dificulte" onclick="userDif('dificile')"><p>dificile</p></div>
     </div>
 
-    <div class="user">
-        <div class="colorS" onclick="userInput('blue')"></div>
-        <div class="colorS" onclick="userInput('red')"></div>
-        <div class="colorS" onclick="userInput('green')"></div>
-        <div class="colorS" onclick="userInput('yellow')"></div>
+    <div class="pseudo-div">
+        <p>Entrez un speudo : </p>
+        <input type="text" id="pseudoInput">
     </div>
-    </section>
-    <script src="js/ramdom_couleur.js"></script>
+
+    <div class="btn-div">
+        <a href="regle">Affichier les règles du jeu</a>
+        <a href="scores">tableau des scores</a>
+    </div>
 </body>
 </html>
