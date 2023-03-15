@@ -100,15 +100,16 @@ footer {
 
 .footer-social li img {
     width: 50px;
-    height: auto;
+    height: 50px;
 }
 
 .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: max(30px, 2vw);
+    flex-direction: row;
 }
+
 .footer-social li {
     list-style: none;
     padding: 20px;
@@ -122,10 +123,29 @@ footer {
 .div-mention {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    margin-right: 1vw;
 }
 
 .a-mention {
     text-decoration: none;
     color: #c5c5c6;
     padding: 50px;
+    font-size: 16px;
 }
+
+.copy-span {
+    font-size: 16px;
+}
+
+/*media query*/
+@media screen and (max-width: 400px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .div-mention {
+        flex-direction: column;
+        margin-right: 0;
+    }
+  }

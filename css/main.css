@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
-*, *::after, *::after {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', 'Arial';
     font-weight: 300;
+    font-size: 16px;
 }
 
 body {
     background: rgb(24, 23, 23);
     cursor: default;
-    
 }
 
 h1 {
@@ -78,66 +78,30 @@ a {
     flex-direction: column;
 }
 
-.div-intro p {
-    color: black;
-    font-size: max(12px, 1.5vw);
-}
-
-.div-intro h5 {
-    margin-top: max(5%, 5vw);
-}
-
-.intro-social li a {
-    font-size: max(10px, 1vw);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    margin: max(10px);
-}
-.intro-social {
-    display: flex;
-    z-index: 2;
-    position: absolute;
-}
-
 /* about */
 .about-content {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: flex;
 }
 
 .div-about {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: flex;
-    padding-bottom: max(40px);
+    width: 80%;
+    height: 100%;
+    margin: auto;
 }
 
-.intro-info {
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    display: flex;
-}
-.intro-info img {padding-right: max(20px);}
-
-.intro-info p {
-    color: black;
-    font-size: max(12px, 1vw);
-    padding-top: max(15px);
-}
-.div-about h5 {padding-top: max(10px);}
-
-.tab-Comp {
-    margin-top: max(50px);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
+.intro-txt {
+    color: white;
+    font-size: max(16px, 1vw);
+    white-space: pre-line;
+    margin-left: 3.2vw;
+    line-height: 1.5;
 }
 
 .skill-bars span {
@@ -149,3 +113,12 @@ a {
     color: black;
     font-size: max(20px, 1.5vw);
 }
+
+/*media query*/
+@media screen and (max-width: 400px) {
+    .intro-txt {
+        white-space: normal;
+        margin-left: 0;
+        line-height: 2;
+    }
+  }

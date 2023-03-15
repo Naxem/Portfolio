@@ -1,0 +1,84 @@
+.section-veille {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 200vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dev-veille {
+    margin-bottom: 5vh;
+}
+
+.titre {
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+}
+
+.veille-ia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.veille-securisationDesApps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1vh;
+    margin: 1vh;
+    border: 2px solid red;
+    border-radius: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.titre-article {
+    color: white;
+    margin-bottom: 1vw;
+    width: 60%;
+    height: auto;
+}
+
+.article img {
+    width: 60%;
+    height: auto;
+}
+
+.article a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 60%;
+    height: auto;
+}
+
+.article p {
+    color: white;
+    font-size: 18px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 60%;
+    height: auto;
+}
+
+.article:hover {
+    border: 2px solid blue;
+    /*transform: scale(1.1);*/
+}

@@ -1,0 +1,343 @@
+*, ::after, ::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+} 
+
+
+
+
+/*Scrollbar*/
+:root {
+    --scrollbar-background-active: rgba(37, 40, 76, 1);
+    --scrollbar-background-inactive: var(--scrollbar-background-active);
+    --scrollbar-thumb-border: 0.1vw solid rgba(28, 31, 59, 1);
+    --scrollbar-thumb-background: rgba(28, 31, 59, 1);
+    --scrollbar-thumb-background-hover: rgba(28, 31, 59, 1);
+    --scrollbar-thumb-radius: 0.6vw;
+    --scrollbar-size: 0.7vw;
+  }
+  
+  /* Webkit and Chromium based browsers */
+  ::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+    overflow: visible;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-background-active);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-background);
+    border-radius: var(--scrollbar-thumb-radius);
+    border: var(--scrollbar-thumb-border);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-background-hover);
+  }
+  
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: var(--scrollbar-background-inactive);
+  }
+  
+  /* Firefox browser */
+  body,
+  html {
+    scrollbar-color: var(--scrollbar-thumb-background)
+      var(--scrollbar-background-active);
+    scrollbar-width: thin;
+  }
+/*Fin scrollbar*/
+
+body{
+    background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+    color:rgb(219, 219, 219);
+    border-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Nav barre*/
+
+.menu_top{
+    position:fixed;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    top:0;
+    left:0;
+    height: 4vw;
+    width: 100vw;
+    border-bottom: 0.1vw solid;
+    box-shadow: 0.2vw 0.1vw 0.2vw black;
+}
+
+
+.titre_top{
+    position: relative;
+    left: -25vw;
+    top:0.5vw;
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.input{
+
+
+}
+
+.annulation{
+    border-right-style: solid;
+    border-width: 0.1vw;
+    width: 15%;
+    margin-top: 0.2vw;
+    left:-18vw;
+    position: relative;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(219, 219, 219);
+}
+.annulation p{
+    color:rgb(219, 219, 219);
+}
+
+
+
+/*Page*/
+.globale{
+    display: flex;
+    padding-top: 0vw;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient( 110.3deg, rgba(49,55,82,1) 96.7%, rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    
+}
+
+/*Page 1*/
+.page1{
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-style: solid;
+    border-width: 0.1vw;
+    width: 50%;
+    height: 30vw;
+    background-image: linear-gradient( 110.3deg, rgba(49,55,82,1) 96.7%, rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    border-radius: 0.5vw;
+}
+
+.page2{
+    align-items: center;
+    display: relative;
+    border-style: solid;
+    border-width: 0.1vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7vw;
+    width: 50%;
+    height: 60vw;
+    background-image: linear-gradient( 110.3deg, rgba(49,55,82,1) 96.7%, rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 0.5vw;
+    
+    
+    
+}
+
+.page3{
+    display: block;
+    border-style: solid;
+    border-width: 0.0001px;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    background-image: linear-gradient( 110.3deg, rgba(49,55,82,1) 96.7%, rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    
+    
+}
+
+.page4{
+    display: block;
+    border-style: solid;
+    border-width: 0.0001px;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    background-image: linear-gradient( 110.3deg, rgba(49,55,82,1) 96.7%, rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    
+}
+
+.page5{
+    display: block;
+    border-style: solid;
+    border-width: 0.0001px;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    background-image: linear-gradient( 110.3deg, rgba(49,55,82,1) 96.7%, rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    
+}
+
+
+
+
+input, select{
+    margin-bottom: 1vw;
+}
+input{
+    margin-top: 0.2vw;
+    border-style: solid;
+    border-color: rgba(148, 139, 139, 0.699);
+    height: 2vw;
+    width: 60%;
+    font-size: 1vw;
+    border-radius: 0.1vw;
+    border-width: 0.1vw;
+    box-shadow: 0.1vw 0.1vw 0.1vw rgba(148, 139, 139, 0.500);
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+
+.t1{
+    margin-left:23%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 3%;
+}
+
+.bouton{
+    width: 30%;
+
+}
+
+
+.choixhospi{
+    text-align: center;
+    font-size: 1vw;
+}
+
+.ald{
+    margin-left: 30%;
+    margin-top:-15px;
+    margin-bottom: -20px;
+}
+
+.txt{
+    margin-left: -32%;
+}
+.txthospi{
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    
+}
+.txtmedecin{
+    font-size: 1vw;
+    margin-top: -1.5vw;
+    margin-bottom: -1.2vw;
+}
+
+.t2{
+    margin-left:-10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+
+
+.civtxt{
+    margin-left:25%;
+}
+
+select{
+    margin-top: 0.2vw;
+    border-style: solid;
+    border-color: rgba(148, 139, 139, 0.699);
+    height: 2vw;
+    width: 60%;
+    font-size: 1vw;
+    border-radius: 0.1vw;
+    border-width: 0.1vw;
+    box-shadow: 0.1vw 0.1vw 0.1vw rgba(148, 139, 139, 0.500);
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+h2{
+    left:25%;
+    font-size: 2vw;
+    margin-top: 0vw;
+}
+
+.txt{
+    font-size: 0.9vw;
+ 
+    left:-5vw;
+}
+
+.Page2contenu{
+    margin-left: -16vw;
+    font-size: 1vw;
+}
+.civ{
+    font-size: 1vw;
+    margin-top: 0vw;
+    margin-left: 15vw;
+    margin-bottom: 0vw;
+}
+textarea{
+    margin-top: 0.2vw;
+    border-style: solid;
+    border-color: rgba(148, 139, 139, 0.699);
+    height: 2vw;
+    width: 25vw;
+    font-size: 1vw;
+    border-radius: 0.1vw;
+    border-width: 0.1vw;
+    box-shadow: 0.1vw 0.1vw 0.1vw rgba(148, 139, 139, 0.500);
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+.pread{
+    align-items: center;
+
+}
+
+#Typechambre{
+
+
+}
