@@ -50,10 +50,11 @@
     width: 600px;
     height: 100%;
     padding: 1rem;
-    border: 2px solid red;
+    border: 3px solid #6C757D;
     border-radius: 5px;
     text-align: center;
     flex-wrap: wrap;
+    background-color: #474748ed;
 }
 
 .titre-article {
@@ -70,7 +71,7 @@
 
 .article a {
     text-decoration: none;
-    color: white;
+    color: #7e8286;
     font-size: 15px;
     letter-spacing: 2px;
     width: 60%;
@@ -78,7 +79,7 @@
 }
 
 .article p {
-    color: white;
+    color: black;
     font-size: 18px;
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -87,7 +88,7 @@
 }
 
 .article:hover {
-    border: 2px solid blue;
+    border: 3px solid #ADB5BD;
     transform: scale(1.02);
 }
 
