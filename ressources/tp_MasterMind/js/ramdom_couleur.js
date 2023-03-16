@@ -79,16 +79,14 @@ function test_reponse() {
 
     if(good == 4) {
         let r = true
-        const tab_scores = [pseudo,nb_essai, dificulte, r]
-        scores.push(JSON.stringify(tab_scores))
+        scores.push({pseudo: pseudo, nbrEssai: nb_essai, dificulte: dificulte, status: r})
         localStorage.setItem('tab_scores', JSON.stringify(scores))
         alert("Tu as gagné !!!" + conbinaison)
         location.reload()
     }
     if(nbchoice == round_couleurs.length) {
         let r = false
-        const tab_scores = [pseudo,nb_essai, dificulte, r]
-        scores.push(JSON.stringify(tab_scores))
+        scores.push({pseudo: pseudo, nbrEssai: nb_essai, dificulte: dificulte, status: r})
         localStorage.setItem('tab_scores', JSON.stringify(scores))
         alert("Tu as perdu !!!" + conbinaison)
         location.reload()
