@@ -1,3 +1,11 @@
+:root {
+    --colorT: #ffff;
+    --colorM: #f7f7f5;
+    --colorA:  #eff205;
+    --colorBorder:  #bdbdbc;
+    --colorBorder2: #f0f0ee;
+}
+
 .section-veille {
     display: flex;
     justify-content: center;
@@ -17,7 +25,7 @@
     display: flex;
     font-size: 35px;
     font-weight: 300;
-    color: white;
+    color: var(--colorT);
 }
 
 .veille-ia {
@@ -48,17 +56,15 @@
     align-items: center;
     flex-direction: column;
     width: 600px;
-    height: 100%;
-    padding: 1rem;
-    border: 3px solid #6C757D;
+    height: 700px;
+    border: 3px solid var(--colorBorder);
     border-radius: 5px;
     text-align: center;
     flex-wrap: wrap;
-    background-color: #474748ed;
 }
 
 .titre-article {
-    color: white;
+    color: var(--colorM);
     margin-bottom: 1vw;
     width: 60%;
     height: auto;
@@ -71,15 +77,20 @@
 
 .article a {
     text-decoration: none;
-    color: #7e8286;
+    color: var(--colorM);
     font-size: 15px;
     letter-spacing: 2px;
     width: 60%;
     height: auto;
 }
 
+.article a:hover {
+    color: var(--colorA);
+    cursor: pointer;
+}
+
 .article p {
-    color: black;
+    color: var(--colorM);
     font-size: 18px;
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -88,19 +99,6 @@
 }
 
 .article:hover {
-    border: 3px solid #ADB5BD;
+    border: 3px solid var(--colorBorder2);
     transform: scale(1.02);
-}
-
-.article a::before {
-    background-color: aqua;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    transition: all 0.3s ease;
-    width: 0;
-    height: 2px;
 }
