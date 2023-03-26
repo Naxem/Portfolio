@@ -23,16 +23,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="formulaire.cs">
+	<link rel="stylesheet" type="text/css" href="formulaire.css">
     <!--CSS-->
     <link rel="stylesheet" href="../css/main.cs">
 	<title>Formulaire de pré-admistions</title>
 </head>
 <body>
-    <section>
+    <section class="section-nav">
         <nav class="menu_top">
             <div class="annulation">
-                <a href="../login.php">
+                <a href="../Staff/deconexion.php">
                     <p> DECONNEXION </p>
                 </a>
             </div>
@@ -42,7 +42,7 @@
         </nav>
     </section>
 <!--add patient-->
-	<section>	
+	<section class="section-main">	
     <!--récup préad-->
     <?php
     if(!$modif) {
@@ -50,21 +50,21 @@
         <?php
             if ($_SESSION["form"] == 0) {
         ?>
-            <section class="page1">
+            <section class="page">
                 <div class="globale">
                     <form action="requete.php" method="POST">
                        <div class="pread">
                             <!-- préadmission -->
-                            <h2>PRADMISSION</h2> 
-                            <label for="choixhospi">Type d'Hospitalisation </label><br> 
+                            <h2>PREADMISSION</h2> 
+                            <p>Type d'Hospitalisation :</p><br> 
                             <select  name ="choixhospi" id="choixhospi">
                                 <option value="1">Pré-admission</option>
                                 <option value="2">Hospitalisation</option> 
                             </select>
-                            <p>Date d'hospitalisation<br><input type="date"  name="datehospi"value="jj-mm-aaaa" min="<?= $date ?>" require></p>
-                            <p>Heure d'hospitalisation<br><input type="time" id="heurehospi" name="heurehospi" min="09:00" max="21:00" required></p>
-                            <label for="medecin">Medecin</label><br> 
-                            <select  name ="medecin" id="medecin">
+                            <p>Date d'hospitalisation :<br><input type="date"  name="datehospi"value="jj-mm-aaaa" min="<?= $date ?>" require></p>
+                            <p>Heure d'hospitalisation :<br><input type="time" id="heurehospi" name="heurehospi" min="09:00" max="21:00" required></p>
+                            <p>Medecin :</p><br> 
+                            <select name ="medecin" id="medecin">
                                 <?php 
                                 $i = 0;
                                 foreach ($getmedecin as $row) {
@@ -85,13 +85,13 @@
         <?php 
             if($_SESSION["form"] == 1) {
         ?>
-        <section class="page2">
+        <section class="page">
             <div class="globale">
                 <form action="requete.php" method="POST">
                     <div class="patient">
                         <!-- INFORMATION CONCERNANT LE PATIENT -->
                         <h2>Information concernant le patient</h2>   
-                        <label for="civ">Civilité</label><br>
+                        <p>Civilité</p><br>
                         <select name="civ" id="civ">
                             <option value="1">Mr</option>
                             <option value="2">Mme</option>
@@ -119,7 +119,7 @@
         <?php 
             if($_SESSION["form"] == 2) {
         ?>
-        <section class="page3">
+        <section class="page">
             <div class="global">
                 <form action="requete.php" method="POST">
                 <div class="info">
@@ -127,24 +127,24 @@
                     <h2>INFORMATION COMPLEMENTAIRE</h2> 
                     <p>Organisme de sécurité sociale / Nom de la caisse d'assurance maladie*<br><input type="text" name="NomSecu" require></p>
                     <p>Numéro de sécurité sociale*<br><input type="text" name="NumSecu" require></p>
-                    <label for="Assurance">Le patient est-il assuré?</label><br>
+                    <p>Le patient est-il assuré ?</p><br>
                     <select name ="Assurance" id="Assurance">
                         <option value = "1">Oui</option>
                         <option value = "0">Non</option>
                     </select>
                     <br>
-                    <label for="Ald"><br>Le patient est-il en ALD?</label><br>
+                    <p><br>Le patient est-il en ALD ?</p><br>
                     <select name ="Ald" id="Ald">
                         <option value = "1">Oui</option>
                         <option value = "0">Non</option>
                     </select>
                     <p>Nom de la mutuelle ou de l'assurance<br><input type="text" name="NomMutu"></p>
                     <p>Numéro d'adhérent<br><input type="text" name=NumAdherent></p>
-                    <label for="TypeChambre">Chambre Particulière</label><br>
+                    <p>Chambre Particulière</p><br>
                     <select name ="TypeChambre" id="TypeChambre">
                         <option value = "1">Oui</option>
                         <option value = "0">Non</option>
-                    </select>
+                    </select><br>
                     <input type="submit" name="infoC" value="Envoyer"/>
                 </div>
                 </form>
@@ -158,7 +158,7 @@
         <?php 
             if($_SESSION["form"] == 3) {
         ?>
-        <section class="page4">
+        <section class="page">
             <div class="globale">
                 <form action="requete.php" method="POST">
                 <div class="contact">
@@ -188,7 +188,7 @@
         <?php 
             if($_SESSION["form"] == 4) {
         ?>
-        <section class="page5">
+        <section class="page">
             <div class="globale">
             <form action="requete.php" method="POST" enctype="multipart/form-data">
                 <div class="pieceJoint">
@@ -279,13 +279,13 @@ foreach($get_infos_patient as $res) {
         <?php
             if ($_SESSION["form"] == 0) {
         ?>
-            <section class="page1">
+            <section class="page">
                 <div class="globale">
                     <form action="requete.php" method="POST">
                        <div class="pread">
                             <!-- préadmission -->
-                            <h2>PRADMISSION</h2> 
-                            <label for="choixhospi">Type d'Hospitalisation </label><br> 
+                            <h2>PREADMISSION</h2> 
+                            <p>Type d'Hospitalisation </p><br> 
                             <select  name ="choixhospi" id="choixhospi">
                                 <?php
                                 switch($hospi) {
@@ -303,7 +303,7 @@ foreach($get_infos_patient as $res) {
                             </select>
                             <p>Date d'hospitalisation<br><input type="date" value="<?= $date_hospi ?>"  name="datehospi"value="jj-mm-aaaa" min="<?= $date ?>" required></p>
                             <p>Heure d'hospitalisation<br><input type="time" value="<?= $heure_hopi ?>" id="heurehospi" name="heurehospi" min="09:00" max="21:00" required></p>
-                            <label for="medecin">Medecin</label><br> 
+                            <p>Medecin</p><br> 
                             <select  name ="medecin" id="medecin">
                                 <?php 
                                 $i = 0;
@@ -329,13 +329,13 @@ foreach($get_infos_patient as $res) {
         <?php 
             if($_SESSION["form"] == 1) {
         ?>
-        <section class="page2">
+        <section class="page">
             <div class="globale">
                 <form action="requete.php" method="POST">
                     <div class="patient">
                         <!-- INFORMATION CONCERNANT LE PATIENT -->
                         <h2>Information concernant le patient</h2>   
-                        <label for="civ">Civilité</label><br>
+                        <p>Civilité</p><br>
                         <select name="civ" id="civ">
                             <?php
                             switch($civ_p) {
@@ -383,7 +383,7 @@ foreach($get_infos_patient as $res) {
         <?php 
             if($_SESSION["form"] == 2) {
         ?>
-        <section class="page3">
+        <section class="page">
             <div class="global">
                 <form action="requete.php" method="POST">
                 <div class="info">
@@ -391,7 +391,7 @@ foreach($get_infos_patient as $res) {
                     <h2>INFORMATION COMPLEMENTAIRE</h2> 
                     <p>Organisme de sécurité sociale / Nom de la caisse d'assurance maladie*<br><input type="text" name="NomSecu" value="<?= $nom_secu ?>" required></p>
                     <p>Numéro de sécurité sociale*<br><input type="text" name="NumSecu" value="<?= $_SESSION["NumeSecu"] ?>" required></p>
-                    <label for="Assurance">Le patient est-il assuré?</label><br>
+                    <p>Le patient est-il assuré?</p><br>
                     <select name ="Assurance" id="Assurance">
                         <?php
                             switch($assurance) {
@@ -410,7 +410,7 @@ foreach($get_infos_patient as $res) {
                         ?>
                     </select>
                     <br>
-                    <label for="Ald"><br>Le patient est-il en ALD?</label><br>
+                    <p><br>Le patient est-il en ALD?</p><br>
                     <select name ="Ald" id="Ald">
                         <?php
                             switch($ald) {
@@ -430,7 +430,7 @@ foreach($get_infos_patient as $res) {
                     </select>
                     <p>Nom de la mutuelle ou de l'assurance<br><input type="text" name="NomMutu" value="<?= $nom_mutuelle ?>"></p>
                     <p>Numéro d'adhérent<br><input type="text" name=NumAdherent value="<?= $num_ad ?>"></p>
-                    <label for="TypeChambre">Chambre Particulière</label><br>
+                    <p>Chambre Particulière</p><br>
                     <select name ="TypeChambre" id="TypeChambre">
                         <?php
                             switch($type_chambre) {
@@ -447,7 +447,7 @@ foreach($get_infos_patient as $res) {
                                     <option value = "0">Non</option>'; 
                             }
                         ?>
-                    </select>
+                    </select><br>
                     <input type="submit" name="infoC" value="Envoyer"/>
                 </div>
                 </form>
@@ -461,7 +461,7 @@ foreach($get_infos_patient as $res) {
         <?php 
             if($_SESSION["form"] == 3) {
         ?>
-        <section class="page4">
+        <section class="page">
             <div class="globale">
                 <form action="requete.php" method="POST">
                 <div class="contact">
@@ -489,9 +489,9 @@ foreach($get_infos_patient as $res) {
 
     <!--récup pièce joint-->
         <?php 
-            if($_SESSION["form"] == 4) {
+            if($_SESSION["form"] == 4) { // vérifer si le fichier exite déja et ne pas le remplacer par du vide si on rempli pas le form
         ?>
-        <section class="page5">
+        <section class="page">
             <div class="globale">
             <form action="requete.php" method="POST" enctype="multipart/form-data">
                 <div class="pieceJoint">

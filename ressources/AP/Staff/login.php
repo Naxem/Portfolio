@@ -10,45 +10,45 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Connexion</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
-    <div class="entier">
-        <section>
-            <nav class="menu_top">
-                <nav class="icon">
-                    <div class="image"> IMAGE </div>
-                </nav>
-                <nav class="titre_top">
-                    <p> Clinique LPF </p>
-                </nav>
-                <nav class="connexion">
-                    <p><button class="boutonR" onclick="window.location.href = '../index.html'">Retour</button></p>
-                </nav>
-            </nav>
-        </section>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="../index.html"><img src="../ressources/medical.png" style="margin-top:-10px;width: 50px;height:50px;"></a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        
+        <div class="nav-links">
+            <a href="../index.html">Retour</a>
+        </div>
+    </div>
 
+    <div class="globale">
         <form action="loginTest.php" method="POST">
             <?php if(!empty($_SESSION["status"]) && $_SESSION['status'] != '') { ?>
             <div class="erreur"><?= $_SESSION["status"] ?></div>
             <?php } ?>
 
-            <div class="menu">  
-                <div class="txt"><p> <p id='lgn'>Identifiant : <br></p><input type="text" name="txt-login" value="" class="champs"></p>
-                <p><p id='mdp'>Mot de passe :</p> <input type="password" name="txt-password" value=""class="champs"></p></div>
+                <label for="login" id='lgn'>Identifiant : </label>
+                <input type="text" name="txt-login" value="" class="champs"><br>
+                
+                <label for="password" id='lgn'>Mot de passe : </label>
+                <input type="password" name="txt-password" value="" class="champs">
+                <br>
 
                 <div class="g-recaptcha" name="recaptcha-response" data-sitekey="6LccV9gkAAAAAKxU2PUoYVhSRI14gpnjbzSGLNTK"></div><br/>
-                <p><input type="submit" name="btn-connexion" value="Connexion" class="bouton"></p>
-            </div>
+                <input type="submit" name="btn-connexion" value="Connexion" class="bouton">
         </form>
-
-        <!--<form action="loginTest.php" method="POST">
-            <div class="menu"> 
-                <p>Entrer les infos suivant pour créer un utilisateur</p> 
-                <div class="txt"><p> <p id='lgn'>Identifiant : <br></p><input type="text" name="txt-login" value="" class="champs"></p>
-                <p><p id='mdp'>Mot de passe :</p> <input type="password" name="txt-password" value=""class="champs"></p></div> 
-                <p><input type="submit" name="btn-crea-user" value="Creer un utilisateur" class="bouton"></p>
-            </div>
-        </form>-->
     </div>
 </body>
 </html>

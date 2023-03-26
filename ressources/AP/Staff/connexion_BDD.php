@@ -1,8 +1,8 @@
 <?php
     function connexion_bdd()
     {
-        $host = 'localhost:3306';
-        $db   = 'ap2';
+        $host = 'localhost';
+        $db   = 'ap';
         $user = 'root';
         $pass = '';
         $dsn = "mysql:host=$host;dbname=$db";

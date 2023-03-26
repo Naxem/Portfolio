@@ -1,0 +1,129 @@
+* {
+    overflow-x: none;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Titillium+Web:wght@200&display=swap');
+
+
+
+.globale{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.navbar{
+    width: 20vw;
+    padding:1rem;
+    height: 100vh;
+    background-color: #0353A4;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Iceland', cursive;
+    font-weight: 500;
+    font-size: 50px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.logo{ 
+    height: 120px;
+    width: 250px;
+    display: flex;
+    
+}
+
+.logo p{
+    display: flex;
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 25px;
+}
+
+.liens{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:150px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    font-size: 30px;
+    color:white;    
+}
+
+.liens a{
+    color:white;
+}
+
+.deco{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 18vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:50px;
+    padding:1rem;
+    font-size: 25px;
+    color:White;
+    position: absolute;
+    bottom:10px;
+}
+
+.menu{
+    width: 80vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .titre{
+    display: flex;
+    position: absolute;
+    top:15vh;
+    font-family: 'Iceland', cursive;
+    font-size: 50px;
+}
+
+.menu .case{
+    width: 100%;
+    width: 40vw;
+    height: 50vh;
+    padding:1rem;
+    background-color:#0353a4cc;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.menu .case p{
+    display: flex;
+    font-family: 'Iceland', cursive;
+    font-size: 35px;
+    color:white;
+}
+

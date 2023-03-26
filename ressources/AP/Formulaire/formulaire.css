@@ -1,3 +1,72 @@
-body{
-    text-align: center;
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --c-background: #0353A4;
+    --c-text: white;
+    --c-select:  #0353A4;
+}
+
+.section-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page {
+    background-color: var(--c-background);
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.page h2 {
+    color: var(--c-text);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.page p {
+    color: var(--c-text);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.page select {
+    color: var(--c-text);
+    font-size: 20px;
+    background-color: var(--c-select);
+    padding: 5px;
+    border: 2px solid var(--c-text);
+    margin-bottom: 10px;
+}
+
+.page input {
+    color: var(--c-text);
+    font-size: 20px;
+    background-color: var(--c-select);
+    padding: 5px;
+    border: 2px solid var(--c-text);
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.page span {
+    color: red;
+    font-size: 20px;
+}
+
+.page input, .page select:hover {
+    cursor: pointer;
 }
