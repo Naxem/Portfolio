@@ -1,0 +1,122 @@
+:root {
+    --color-bleu: #8ECAE6;
+    --color-bleu2: #219EBC;
+    --color-black-Bleu: #023047;
+	--color-black-Bleu2:rgba(2, 48, 71, 0.830);
+    --color-yellow: #FFB703;
+    --color-orange: #FB8500;
+    --font-size1: 25px
+}
+
+body {
+    background-color: var(--color-black-Bleu2);
+    width: 100%;
+    height: 100%;
+}
+
+/******/
+.form-addPlayliste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.form-addPlayliste p {
+    white-space: pre;
+    font-size: var(--font-size1);
+    color: var(--color-yellow);
+}
+
+.input-nomPL {
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--color-yellow);
+    background-color: var(--color-black-Bleu2);
+    border: 1px solid var(--color-bleu2);
+    border-radius: 5px;
+}
+
+.input-nomPL::placeholder {opacity: 50%;}
+
+.input-nomPL:focus,
+.input-btnAdd:focus {
+    outline: none;
+    border: 1px solid var(--color-orange);
+}
+.input-nomPL:hover,
+.input-btnAdd:hover {cursor: pointer;}
+
+.input-btnAdd {
+    color: var(--color-yellow);
+    padding: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: var(--color-black-Bleu2);
+    border: 1px solid var(--color-bleu2);
+    border-radius: 5px;
+}
+
+/******/
+.form-addMusic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.form-addMusic p {
+    white-space: pre;
+    font-size: var(--font-size1);
+    color: var(--color-yellow);
+}
+
+.input-addFile {
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--color-yellow);
+    background-color: var(--color-black-Bleu2);
+    border: 1px solid var(--color-bleu2);
+    border-radius: 5px;
+}
+
+.select-playliste {
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--color-yellow);
+    background-color: var(--color-black-Bleu2);
+    border: 1px solid var(--color-bleu2);
+    border-radius: 5px;
+}
+
+/******/
+.erreur {
+    background-color: #a1151577;
+    border: 3px solid rgb(114, 6, 6);
+    color: #be0404e8;
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2px;
+}
+
+.reussi {
+    background-color: #15a13877;
+    border: 3px solid rgb(1, 94, 1);
+    color: #04a504;
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2px;
+}

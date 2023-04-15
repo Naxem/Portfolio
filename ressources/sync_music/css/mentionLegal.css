@@ -1,0 +1,39 @@
+:root {
+    --color-bleu: #8ECAE6;
+    --color-bleu2: #219EBC;
+    --color-black-Bleu: #023047;
+	--color-black-Bleu2:rgba(2, 48, 71, 0.830);
+    --color-yellow: #FFB703;
+    --color-orange: #FB8500;
+}
+body {
+    background-color: var(--color-black-Bleu2);
+    color: var(--color-orange);
+    font-size: 20px;
+}
+
+section#mentions {
+    margin-top: 100px;
+    min-height: max-content;
+    max-width: 95%;
+}
+section .textes {margin: 20px 0 0 20px;}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--color-yellow);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+    color: var(--color-yellow);
+}
+strong {font-weight: 800;}
+section#mentions a {
+    text-decoration: underline;
+    color: var(--color-bleu2);
+}
+section#mentions a:hover {cursor: pointer;}
