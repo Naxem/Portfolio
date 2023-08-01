@@ -1,0 +1,38 @@
+* , *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.span-mtL p, .span-mtL, .span-mtL a, .span-mtL strong {
+    color: #c99d3e;
+    font-size: max(1.5vw, 20px);
+    font-family: sans-serif;
+    margin-top: 1rem;
+}
+
+.div-mtL {
+    margin-bottom: 5%;
+    max-width: 1000px;
+    margin-left: 1%;
+    width: 90%;
+}
+
+h2 {
+    color: #c99d3e;
+    font-family: "OldLondon", sans-serif;
+    font-size: max(3vw, 40px);
+    max-width: 1000px;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    width: 90%;
+}
+
+body {
+    background-color: #000;
+}
+
+@media screen and (max-width: 900px) {
+h2 {margin-left: 2%;}
+.div-mtL {margin-left: 2%;}
+}

@@ -1,0 +1,245 @@
+/*? IMPORTATION DES FONTS ?*/
+@import url('font.css');
+
+/*! INITIALISATION DE LA PAGE !*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/*! INITIALISATION DES COULEURS !*/
+:root {
+    --c-background: #FFFFFF;
+
+    --c-jaune: #FCD50B;
+    --c-blanc: #FFFFFF;
+    --c-noir: #000000;
+    --c-rouge: #A11516;
+
+    --box-shadow: 5px 5px 20px rgba(153, 153, 153, 0.25);
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/** NAVBAR **/
+header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    height: 100px;
+    width: 100%;
+}
+
+header ul.list{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header ul.list img {
+    position: absolute;
+    top: 5px;
+    left: 2rem;
+    width: 118px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);
+}
+
+header ul.list img:hover{
+    transform: scale(1.1);
+}
+
+header li.list-item a {
+    font-style: normal;
+    margin-right: 5rem;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--c-noir);
+    transition: all 300ms ease;
+    font-family: 'The Goldsmith Vintage';
+}
+
+header li.list-item a:hover:not(section#footer li.list-item a:hover) {
+    color: var(--c-jaune);
+    transition: all 300ms ease;
+}
+
+
+
+
+
+
+section#mentions {
+    margin-top: 100px;
+    min-height: max-content;
+    max-width: 95%;
+}
+
+section .textes {
+    margin: 20px 0 0 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+strong {
+    color: var(--c-rouge);
+    font-weight: 800;
+}
+
+section#mentions a,
+section#cgv a {
+    text-decoration: underline;
+}
+
+
+
+
+
+section#cgv {
+    margin: 20px 0 40px 0;
+    min-height: max-content;
+    width: 95%;
+}
+
+
+
+
+
+
+
+section#footer {
+    height: max-content;
+    width: 100%;
+    background-color: var(--c-jaune);
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+section#footer .produits {
+    margin-bottom: 20px;
+}
+
+section#footer .titre {
+    font-family: 'The Goldsmith Vintage';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: var(--c-noir);
+    white-space: break-spaces;
+    margin: 30px 0 10px;
+}
+
+section#footer li.list-item a {
+    font-family: 'The Goldsmith Vintage';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 40px;
+    color: var(--c-blanc);
+    transition: all 300ms ease;
+}
+
+section#footer li.list-item a:hover {
+    color: var(--c-noir);
+    transition: all 300ms ease;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    section#footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    section#footer .produits {
+        margin-bottom: 0;
+    }
+
+    section#footer .mentions {
+        margin-bottom: 20px;
+    }
+
+    section#footer .produits,
+    section#footer .pizzaria,
+    section#footer .contact,
+    section#footer .mentions {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section#footer .produits ul,
+    section#footer .pizzaria ul,
+    section#footer .contact ul,
+    section#footer .mentions ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    section#footer .titre {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    section#footer li.list-item {
+        text-align: center;
+    }
+    
+    section#footer li.list-item a {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header ul img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+}

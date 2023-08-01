@@ -1,0 +1,95 @@
+* , *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** body ***/
+body {
+    background: #000;
+    color: #c99d3e;
+}
+
+.h1-nom {
+    font-size: 8vw;
+    font-family: "OldLondon", sans-serif;
+}
+
+.div-Acceuil h2 {
+    font-size: 5vw;
+    line-height: 2;
+    font-family: "OldLondon", sans-serif;
+}
+
+.div-Acceuil h3 {
+    font-size: 3.5vw;
+    line-height: 1.5;
+    font-family: "OldLondon", sans-serif;
+}
+
+.div-img {
+    height: auto;
+    width: 40%;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.img-photosGroupe {
+    width: 100%;
+    height: auto;
+}
+
+.div-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 99%;
+    height: 600px;
+}
+.item {flex-grow: 1;}
+
+.div-info p, .div-nom span, .div-des span {
+    font-size: 1.8vw;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.div-info {
+    margin-top: 3%;
+    width: 95%;
+}
+.div-info br {display: none;}
+
+.div-nom a {
+    text-decoration: none;
+    color: #c99d3e;
+    cursor: pointer;
+}
+
+/* Media Main */
+@media screen and (max-width: 900px) {
+.h1-nom {margin-top: 2%;}
+.div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 80%;
+    height: 700px;
+}
+.div-info p, .div-nom span, .div-des span {font-size: 2.5vw;}
+}
+
+@media screen and (max-width: 400px) {
+.div-img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
+}
+.div-info p, .div-nom span, .div-des span {font-size: 4.5vw;}
+.div-main {height: 600px;}
+}

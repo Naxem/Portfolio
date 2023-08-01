@@ -1,0 +1,103 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.img-grid:active {
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    border: #c5c5c6 solid 1px;
+}
+
+.div-filter {
+    font-family: "OldLondon", sans-serif;
+    color: #c99d3e;
+}
+
+body {
+    background: #000;
+    color : #c99d3e;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "OldLondon", sans-serif;
+    color: #c99d3e;
+    margin: 50px 0;
+}
+
+.fetchval {
+    font-family: "OldLondon", sans-serif;
+    color: #c99d3e;
+}
+
+.grille {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+.grid-item {
+    width: 300px;
+    height: 300px;
+}
+
+.img-grid{
+    width: 300px;
+    height: 300px;
+}
+
+/*** Confirmation ***/
+label {
+    font-family: "sans-serif";
+    color: red;
+    font-size: 25px;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #c99d3e solid 1px;
+    padding: 20px;
+}
+
+.btn-classe {
+    padding: 10px 20px;
+    font-size: 15px;
+    position: relative;
+    margin: 32px;
+}
+  
+/* Button */
+.btn {
+    overflow: hidden;
+    color: white;
+    background-color: #000;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {transform: translate(0, -1px);}
+.btn:hover::after {transform: rotate(150deg);}
+
+/* filtre */
+#fetchval {
+    overflow: hidden;
+    color: #c99d3e;
+    background: #000;
+    border: #c5c5c6 solid 1px;
+    border-radius: 15px;
+    padding: 0.6%;
+    font-size: 15px;
+}
+#filters {font-size: 20px;}
