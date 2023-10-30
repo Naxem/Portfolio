@@ -35,7 +35,7 @@
             if(password_verify($mdp, $pass)) {                
                 if(isset($_POST['g-recaptcha-response'])) {
                     $captcha = $_POST['g-recaptcha-response'];
-                    $secretKey = "6LccV9gkAAAAAAhTXTsRKbHiylrAtmdxECgiKJZz";
+                    $secretKey = "6LcsftUkAAAAABXDlssDfWOwqTY89vLyMzs_luJX";
                     $ip = $_SERVER['REMOTE_ADDR'];
                     // post request to server
                     $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);

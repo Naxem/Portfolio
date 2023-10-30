@@ -33,7 +33,7 @@
     <nav>
         <div class="div-title">
             <a href="index.html" id="Accueil" class="nav-icon" aria-label="visit homepage" aria-current="page">
-                <span>Black Art's Tattoo</span>
+                <span>Nom du salon de tatouage</span>
             </a>
         </div>
         
@@ -60,8 +60,8 @@
         <span>Filtre par &nbsp;</span>
         <select name="fetchval" id="fetchval" class="fetchval">
             <option value="" disabled="" selected="">Selectioner un filtre</option>
-            <option value="tattooS">Tatouage Sébastien</option>
-            <option value="tattooY">Tatouage Yoan</option>
+            <option value="tattooS">Tatouage Prénom</option>
+            <option value="tattooY">Tatouage Prénom2</option>
             <!--<option value="piercing">Piercing</option>-->
             <!--<option value="dermoRepa">Dermographie Réparatrice</option>-->
         </select>
@@ -87,6 +87,8 @@
     ?>
     </div>
 
+    <p>c'est images ne proviennent pas du salon de tatouage il provient du site pexels.com</p>
+
     <script src="JS/filter.js"></script>
 </body>
 <footer>
@@ -105,10 +107,10 @@
         <div class="bloc footer-contact" id="contact">
             <center>
                 <h3>Nous contacter</h3>
-                <p>07.71.94.82.16</p>
-                <p>09.75.39.11.24</p>
-                <p>titinepurple@gmail.com</p>
-                <p>35 Rue nationale, 59241 Masnières</p>
+                <p>07.07.07.07.07</p>
+                <p>09.09.09.09.09</p>
+                <p>tattoo@gmail.com</p>
+                <p>35 Rue, 59268 Ville</p>
             </center>
         </div>
 
@@ -130,7 +132,7 @@
             <center>
                 <h3>Réseaux sociaux</h3>
                 <ul class="media-list">
-                    <li><a href="https://fr-fr.facebook.com/blackartstattoo" target="_blank"><svg
+                    <li><a href="" target="_blank"><svg
                         aria-hidden="true"
                         focusable="false"
                         data-prefix="fab"
@@ -146,7 +148,7 @@
                         </svg>
                         Facebook</a>
                     </li>
-                    <li><a href="https://www.instagram.com/blackartstattooseb/" target="_blank"><svg
+                    <li><a href="" target="_blank"><svg
                         aria-hidden="true"
                         focusable="false"
                         data-prefix="fab"

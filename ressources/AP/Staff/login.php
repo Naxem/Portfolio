@@ -46,7 +46,7 @@
                 <input type="password" name="txt-password" value="" class="champs">
                 <br>
 
-                <div class="g-recaptcha" name="recaptcha-response" data-sitekey="6LccV9gkAAAAAKxU2PUoYVhSRI14gpnjbzSGLNTK"></div><br/>
+                <div class="g-recaptcha" name="recaptcha-response" data-sitekey="6LcsftUkAAAAAFWMl89rImuOTCdUmG7Si9LnMZr1"></div><br/>
                 <input type="submit" name="btn-connexion" value="Connexion" class="bouton">
         </form>
     </div>

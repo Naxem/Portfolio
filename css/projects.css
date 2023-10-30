@@ -30,23 +30,16 @@
   position: relative;
   min-width: 320px;
   height: 440px;
-  box-shadow: 4px #d41515da; /*a changer*/
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
 }
-
-.body-projects .container .card:nth-child(1) .box .content a {
-  background: #2196f3;
-}
-
-.body-projects .container .card:nth-child(2) .box .content a {
-  background: #e91e63;
-}
-
-.body-projects .container .card:nth-child(3) .box .content a {
-  background: #2ede1bf6;
-}
+.body-projects .container .card:nth-child(1) .box .content a {background: #2196f3;}
+.body-projects .container .card:nth-child(2) .box .content a {background: #e91e63;}
+.body-projects .container .card:nth-child(3) .box .content a {background: #2ede1bf6;}
+.body-projects .container .card:nth-child(4) .box .content a {background: #002ae4;}
+.body-projects .container .card:nth-child(5) .box .content a {background: #d33108;}
+.body-projects .container .card:nth-child(6) .box .content a {background: #c18d41;}
 
 .body-projects .container .card .box {
   position: absolute;

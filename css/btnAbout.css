@@ -38,14 +38,6 @@
 }
 
 .button:hover:nth-child(1) {
-    background: #17f4032f;
-    box-shadow: 0 0 5px #17f403,
-                0 0 5px #17f403,
-                0 0 20px #17f403,
-                0 0 20px #17f403;
-}
-
-.button:hover:nth-child(2) {
     background: #f403032f;
     box-shadow: 0 0 5px #f40303,
                 0 0 5px #f40303,
@@ -53,7 +45,7 @@
                 0 0 20px #f40303;
 }
 
-.button:hover:nth-child(3) {
+.button:hover:nth-child(2) {
     background: #fffb002f;
     box-shadow: 0 0 5px #fffb00,
                 0 0 5px #fffb00,
@@ -61,98 +53,20 @@
                 0 0 20px #fffb00;
 }
 
-.button:hover:nth-child(4) {
+.button:hover:nth-child(3) {
     background: #03ecf42f;
     box-shadow: 0 0 5px #03ecf4,
                 0 0 5px #03ecf4,
                 0 0 20px #03ecf4,
                 0 0 20px #03ecf4;
 }
-
-.button:nth-child(1) {color: #17f403;}
-.button:nth-child(2) {color: #f40303;}
-.button:nth-child(3) {color: #fffb00;}
-.button:nth-child(4) {color: #03ecf4;}
+.button:nth-child(1) {color: #f40303;}
+.button:nth-child(2) {color: #fffb00;}
+.button:nth-child(3) {color: #03ecf4;}
 
 .button .spanBtn {
     position: absolute;
     display: block;
-}
-
-/*btn 1*/
-.button1 .spanBtn:nth-child(1) {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#17f403);
-    animation: animate1 1s linear infinite;
-}
-
-@keyframes animate1 {
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
-
-.button1 .spanBtn:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#17f403);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
-}
-
-@keyframes animate2 {
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
-}
-
-.button1 .spanBtn:nth-child(3) {
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#17f403);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
-}
-
-@keyframes animate3 {
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
-}
-
-.button1 .spanBtn:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#17f403);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
-}
-
-@keyframes animate4 {
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
 }
 
 /*btn 2*/

@@ -2,7 +2,7 @@
     function connexion_bdd()
     {
         $host = 'localhost';
-        $db   = 'siteTatoo';
+        $db   = 'stage2022';
         $user = 'root';
         $pass = '';
         $dsn = "mysql:host=$host;dbname=$db";
