@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     background: #1a1a19;
     cursor: default;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -80,6 +81,10 @@ a {
     flex-direction: column;
 }
 
+.intro-position span a {
+    font-size: max(15px, 1.3vw);;
+}
+
 /* about */
 .about-content {
     display: flex;
@@ -95,15 +100,13 @@ a {
     flex-direction: column;
     width: 80%;
     height: 100%;
-    margin: auto;
 }
 
 .intro-txt {
     color: white;
     font-size: max(16px, 1vw);
-    white-space: pre-line;
-    margin-left: 3.2vw;
-    line-height: 1.5;
+    line-height: 2;
+    width: 90%;
 }
 
 .skill-bars span {
@@ -114,13 +117,28 @@ a {
 .skill-bars strong {
     color: black;
     font-size: max(20px, 1.5vw);
+    
 }
 
 /*media query*/
-@media screen and (max-width: 400px) {
-    .intro-txt {
-        white-space: normal;
-        margin-left: 0;
-        line-height: 2;
+@media screen and (max-width: 600px) {
+    h5 {font-size: 20px;}
+    h1 {font-size: 40px;}
+    h2 {font-size: 25px;}
+
+    .intro-position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-  }
+
+    .intro-txt {
+        font-size: max(13px, 1vw);
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    h5 {font-size: 20px;}
+}

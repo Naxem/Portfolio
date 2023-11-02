@@ -69,14 +69,14 @@
     display: block;
 }
 
-/*btn 2*/
+/*btn 1*/
 .button2 .spanBtn:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg,transparent,#f40303);
-    animation: animate1 1s linear infinite;
+    animation: animate1 1.5s linear infinite;
 }
 
 @keyframes animate1 {
@@ -94,8 +94,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg,transparent,#f40303);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
+    animation: animate2 1.5s linear infinite;
+    animation-delay: 0.75s;
 }
 
 @keyframes animate2 {
@@ -113,8 +113,8 @@
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg,transparent,#f40303);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
+    animation: animate3 1.5s linear infinite;
+    animation-delay: 1s;
 }
 
 @keyframes animate3 {
@@ -132,8 +132,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg,transparent,#f40303);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
+    animation: animate4 1.5s linear infinite;
+    animation-delay: 1.25s;
 }
 
 @keyframes animate4 {
@@ -154,14 +154,14 @@
     }
 }
 
-/*btn 3*/
+/*btn 2*/
 .button3 .spanBtn:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg,transparent,#fffb00);
-    animation: animate1 1s linear infinite;
+    animation: animate1 1.5s linear infinite;
 }
 
 @keyframes animate1 {
@@ -179,8 +179,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg,transparent,#fffb00);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
+    animation: animate2 1.5s linear infinite;
+    animation-delay: 0.50s;
 }
 
 @keyframes animate2 {
@@ -198,8 +198,8 @@
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg,transparent,#fffb00);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
+    animation: animate3 1.5s linear infinite;
+    animation-delay: 0.75s;
 }
 
 @keyframes animate3 {
@@ -217,8 +217,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg,transparent,#fffb00);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
+    animation: animate4 1.5s linear infinite;
+    animation-delay: 1.25s;
 }
 
 @keyframes animate4 {
@@ -230,14 +230,14 @@
     }
 }
 
-/*btn 4*/
+/*btn 3*/
 .button4 .spanBtn:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg,transparent,#03ecf4);
-    animation: animate1 1s linear infinite;
+    animation: animate1 1.5s linear infinite;
 }
 
 @keyframes animate1 {
@@ -255,8 +255,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg,transparent,#03ecf4);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
+    animation: animate2 1.5s linear infinite;
+    animation-delay: 0.50s;
 }
 
 @keyframes animate2 {
@@ -274,8 +274,8 @@
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg,transparent,#03ecf4);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
+    animation: animate3 1.5s linear infinite;
+    animation-delay: 0.75s;
 }
 
 @keyframes animate3 {
@@ -293,8 +293,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg,transparent,#03ecf4);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
+    animation: animate4 1.5s linear infinite;
+    animation-delay: 1.25s;
 }
 
 @keyframes animate4 {
