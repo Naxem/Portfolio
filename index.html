@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/veille.css">
    	<!-- icon-->
 	<link rel="icon" type="image/png" href="ressources/iconImg.png">
-
+	<!--JS-->
 	<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <header>
@@ -42,7 +42,7 @@
 </header>
 <body id="top">
 <!--Bloc intro-->
-   	<section class="section-intro" id="intro">
+   	<section class="section-intro reveal" id="intro">
 		<div class="opacity-img"></div>
 		<div class="div-intro">
 			<h5>Hello, World !</h5>
@@ -56,7 +56,7 @@
    	</section>
 
 <!--Bloc about-->
-   	<section id="about" class="section-about">  
+   	<section id="about" class="section-about reveal">  
 		<div class="about-content">
 			<div class="div-about">
 				<h2>Je me présente</h2>
@@ -148,7 +148,7 @@
 		</div>
 
 <!--Bloc Edute-->
-	<section id="etude" class="section-etude">
+	<section id="etude" class="section-etude reveal">
    		<div class="etude-timeline">
    			<div class="etude-header">
    				<center><h2>Etudes :</h2></center>
@@ -204,7 +204,7 @@
 	</section>
 
 <!--Bloc Projets-->
-	<section id="projects" class="section-projet">
+	<section id="projects" class="section-projet reveal">
 		<div class="dev-projects">  
 			<h2 class="h2-projects">Projets :</h2>		     	
 		</div>
@@ -297,8 +297,5 @@
       	</div>	
 	</div>
 </footer>
-<script>
-	ScrollReveal().reveal('.section-about');
-	ScrollReveal().reveal('.section-about', { delay: 500 });
-</script>
+<script src="./js/scroll_reveal.js"></script>
 </html>
