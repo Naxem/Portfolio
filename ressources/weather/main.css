@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 30dvh;
+    background-color: #a2d2ff;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+    font-weight: 800;
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    padding: 8px;
+}
