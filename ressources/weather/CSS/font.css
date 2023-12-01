@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;0,800;1,300;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --black-color: rgba(0, 0, 0, 0.801);
+    --white-color: rgba(255, 255, 255, 0.945);
+    --bleu-color: #a2d2ff;
+    --font-color: black;
+    --font-family: "Rubik", sans-serif;
+    --font-family2: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100dvw - 700px);
+    height: 40px;
+    background-color: var(--black-color);
+    z-index: 1;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.div-footer p {
+    font-size: 18px;
+    color: var(--font-color);
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+
+.div-footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
