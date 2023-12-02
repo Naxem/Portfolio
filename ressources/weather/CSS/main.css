@@ -83,7 +83,7 @@ main {
 
 .div-presivion {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -97,7 +97,8 @@ main {
     flex-direction: column;
 }
 
-#todayHourlyContainer h2 {
+#todayHourlyContainer h2,
+#tomorrowHourlyContainer h2 {
     font-size: 25px;
     color: var(--font-color);
     font-weight: 700;
@@ -105,7 +106,8 @@ main {
 }
 
 #todayHourlyContainer span,
-#todayHourlyContainer div {
+#todayHourlyContainer div,
+#tomorrowHourlyContainer span {
     font-size: 18px;
     color: var(--font-color);
     font-weight: 400;
@@ -117,20 +119,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#tomorrowHourlyContainer h2 {
-    font-size: 25px;
-    color: var(--font-color);
-    font-weight: 700;
-    font-family: var(--font-family);
-}
-
-#tomorrowHourlyContainer span {
-    font-size: 18px;
-    color: var(--font-color);
-    font-weight: 400;
-    font-family: var(--font-family2);
 }
 
 /*section-right*/

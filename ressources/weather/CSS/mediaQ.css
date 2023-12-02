@@ -1,0 +1,84 @@
+@media screen and (max-width: 1200px) {
+    body {flex-direction: column;}
+
+    /*Alert*/
+    #alertsContainer strong {font-size: 14px;}
+
+    /*Sectoin-left*/
+    .section-left {
+        position: relative;
+        top: 40px;
+        padding: 50px;
+        width: 100%;
+    }
+
+    #weather-info {
+        width: 100%;
+        height: 100%;
+    }   
+    
+    #weather-info h1 {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    #weather-info p {
+        padding: 10px;
+        font-size: 22px;
+    }
+
+    /*main*/
+    main {
+        position: relative;
+        top: calc(200dvh - 100dvh + 40px);
+        padding: 100px;
+        width: 100%;
+        height: calc(100dvh - 40px);
+    }
+
+    #todayHourlyContainer h2,
+    #tomorrowHourlyContainer h2 {
+        font-size: 30px;
+        padding: 30px;
+    }
+    
+    #todayHourlyContainer span,
+    #todayHourlyContainer div,
+    #tomorrowHourlyContainer span {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    /*section-right*/
+    .section-right {
+        position: relative;
+        width: 100%;
+        height: calc(100dvh - 40px);
+        top: calc(300dvh - 200dvh + 40px);
+        padding: 50px;
+    }
+
+    .prevision h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+    
+    #forecastContainer {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    /*footer*/
+    footer {
+        position: relative;
+        width: 100%;
+        top: calc(400dvh - 300dvh + 40px);;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    /*footer*/
+    footer {
+        top: calc(400dvh - 0dvh);
+    }
+}
