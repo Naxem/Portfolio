@@ -19,17 +19,17 @@ body {
 
 h1 {
     color: rgba(255, 255, 255, 0.7);
-    font-size: max(30px, 5vw);
+    font-size: max(30px, 5.5vw);
 }
 
 h2 {
     color: rgba(255, 255, 255, 0.7);
-    font-size: max(20px, 2.5vw);
+    font-size: max(20px, 3.5vw);
 }
 
 h3 {
     color: rgba(255, 255, 255, 0.7);
-    font-size: max(15px, 1.3vw);
+    font-size: max(15px, 2.3vw);
 }
 
 h5 {
@@ -45,7 +45,7 @@ span {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: blue;
+    color: rgb(255, 217, 0);
 }
 
 /* intro */
@@ -124,7 +124,7 @@ a {
 @media screen and (max-width: 600px) {
     h5 {font-size: 20px;}
     h1 {font-size: 40px;}
-    h2 {font-size: 25px;}
+    h2 {font-size: 30px;}
 
     .intro-position {
         display: flex;
