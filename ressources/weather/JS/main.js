@@ -1,32 +1,32 @@
 // Fonction pour obtenir la position du client
 function getPosition() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
+        navigator.geolocation.getCurrentPosition(function (position) {
             const latitude = position.coords.latitude
             const longitude = position.coords.longitude
-        
+
             // Utilise les valeurs de latitude et longitude comme nécessaire
             console.log("Latitude:", latitude)
             console.log("Longitude:", longitude)
-        
+
             // Envoie les données au serveur en utilisant AJAX
             $.ajax({
                 url: 'JS/proxy.php',
                 type: 'GET',
-                data: { 
+                data: {
                     latitude: latitude,
                     longitude: longitude
                 },
-                success: function() {
+                success: function () {
                     showWeather()
                 },
                 error: function (error) {
                     console.error('Erreur lors de l\'envoi des données au serveur:', error)
                 }
             });
-        }, function(error) {
+        }, function (error) {
             console.error("Erreur lors de l'obtention de la position:", error.message)
-        })        
+        })
     }
 }
 

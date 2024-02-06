@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/devis.css">
+
+</head>
+
+<body>
+    <header>
+        <ul class="list">
+            <li class="list-item"><a href="../index"><img src="../resources/photos/site/logo_noir.png"></a></li>
+            <li class="list-item"><a href="../index">Accueil</a></li>
+            <li class="list-item"><a href="engagements">Nos engagements</a></li>
+            <li class="list-item"><a href="contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="contact" class="section-contact">
+        <h1>Faire un devis</h1>
+        <form action="../php/devis.php" method="POST">
+            <input type="email" name="email" required maxlength="100" placeholder="Votre adresse mail"></p>
+            <input type="text" name="object" required maxlength="200" placeholder="Votre objet de message"></p>
+            <textarea name="msg" required maxlength="1000" wrap="soft" placeholder="Votre message"></textarea></p>
+
+            <input type="submit" value="envoyer" name="btn-envoyer">
+        </form>
+        <p class="p-info">Aucune de ces informations ne seront sauvegardees ou utilisees</p>
+    </section>
+
+
+    <section id="footer">
+        <div class="produits">
+            <div class="titre">Nos produits</div>
+            <ul class="list">
+                <li class="list-item"><a href="#pizza">P'zzas</a></li>
+                <li class="list-item"><a href="#pate">Nos snacks</a></li>
+                <li class="list-item"><a href="#dessert">Boissons et desserts</a></li>
+            </ul>
+        </div>
+
+        <div class="pizzaria">
+            <div class="titre">Old school P'zza</div>
+            <ul class="list">
+                <li class="list-item"><a href="engagements#enga">Nos engagements</a></li>
+                <li class="list-item"><a href="engagements#galerie">La pizzeria</a></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <div class="titre">Contact</div>
+            <ul class="list">
+                <li class="list-item"><a href="devis">Faire un devis</a></li>
+                <li class="list-item"><a href="tel:06 55 33 01 74">06 55 33 01 74</a></li>
+            </ul>
+        </div>
+
+        <div class="mentions">
+            <div class="titre">Divers</div>
+            <ul class="list">
+                <li class="list-item"><a href="mentions-cgv#mentions">Mentions Legales</a></li>
+                <li class="list-item"><a href="mentions-cgv#cgv">Conditions generales de vente</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

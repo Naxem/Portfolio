@@ -11,17 +11,19 @@ if ((isset($_GET["latitude"])) && (isset($_GET["longitude"]))) {
 }
 
 if (isset($_GET["action"])) {
-    requete($_GET["action"], $_SESSION["cleApi"], $_SESSION["latitude"] , $_SESSION["longitude"]);
+    requete($_GET["action"], $_SESSION["cleApi"], $_SESSION["latitude"], $_SESSION["longitude"]);
 }
 
-function geolocation() {
+function geolocation()
+{
     $_SESSION["latitude"]  = $_GET['latitude'];
     $_SESSION["longitude"] = $_GET['longitude'];
     // Renvoie une réponse au client si nécessaire
     echo "Données de géolocalisation reçues avec succès.";
 }
 
-function requete($nbAction, $cleApi, $latitude, $longitude) {
+function requete($nbAction, $cleApi, $latitude, $longitude)
+{
     // Vérifier la méthode de requête
     if ($nbAction == '1') {
         // Construire l'URL de l'API OpenWeatherMap avec la clé
