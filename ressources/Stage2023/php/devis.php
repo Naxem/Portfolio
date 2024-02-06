@@ -24,7 +24,7 @@
     $mail->Port = "587";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Username = "oldschoolpizza@oldschoolpizza.fr";
-    $mail->Password = "55FF0517D9ADCD08C5333460EF64";
+    $mail->Password = "555555555555555";
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';
 
